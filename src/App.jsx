@@ -17,7 +17,7 @@ function App() {
 
     return (
         <main id="app">
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Routes>
 
                     <Route path="/" element={<Notes notes={notes} />}></Route>
